@@ -1,0 +1,31 @@
+{
+  "name": "electron-updater-example",
+  "version": "1.0.0",
+  "description": "electron-updater app example",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:linux": "electron-builder --linux"
+  },
+  "author": "Bruno Dantas",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.0",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2"
+  },
+  "build": {
+    "appId": "com.github.bruno96dantas.electronupdaterexample",
+    "linux": {
+      "category": "utility",
+      "target": [
+        "deb",
+        "snap",
+        "rpm"
+      ]
+    }
+  }
+}
